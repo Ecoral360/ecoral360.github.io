@@ -1,35 +1,18 @@
 <script lang="ts">
-    import Counter from './lib/Counter.svelte'
+    import Main from "./routes/index.svelte";
+    import Hello from "./routes/hello.svelte";
+    import { Route, Router } from "svelte-navigator";
+
+    const path = window.location.pathname;
+    const pages = {
+        "/": Main,
+        "/hello": Hello
+    }
+    console.log(path)
+    let page = pages[path] ?? Main
 </script>
 
-<main>
-    <h1>
-        Démos du cours <em>IFT1016</em>
-    </h1>
-    <div>
-        <a href="www.google.com">Bonjour!</a>
-    </div>
-    <Counter/>
-    <section>
-        1
-    </section>
-    <section>
-        2
-    </section>
-    <section>
-        3
-    </section>
-    <section>
-        4
-    </section>
-    <section>
-        5
-    </section>
-</main>
-
-<style>
-    main {
-        display: flex;
-        flex-direction: column;
-    }
-</style>
+<Router>
+    <Route path="/" component="{Main}"/>
+    <Route path="/hello" component="{Hello}"/>
+</Router>
