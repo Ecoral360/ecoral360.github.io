@@ -6,24 +6,46 @@
 	<link rel='icon' href='/favicon.png' />
 	<meta name='viewport' content='width=device-width' />
 	<title>Hello</title>
-	<meta http-equiv="content-security-policy" content="">
-	<link rel="modulepreload" href="./_app/immutable/start-9551fff2.js">
+	<meta http-equiv="content-security-policy" content=""><script defer src="https://pyscript.net/latest/pyscript.js" data-svelte="svelte-fvibbf"></script><link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" data-svelte="svelte-fvibbf">
+	<link rel="modulepreload" href="./_app/immutable/start-bdeefb09.js">
 	<link rel="modulepreload" href="./_app/immutable/chunks/index-b2979372.js">
-	<link rel="modulepreload" href="./_app/immutable/chunks/singletons-6e6648a1.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/singletons-1bd63744.js">
+	<link rel="modulepreload" href="./_app/immutable/components/layout.svelte-69762087.js">
+	<link rel="modulepreload" href="./_app/immutable/modules/pages/_layout.js-7b9cbfbc.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/_layout-8d2a742b.js">
+	<link rel="modulepreload" href="./_app/immutable/components/pages/do-python/_page.svelte-3f6d01d7.js">
 
 </head>
 <body>
 <div>
-		<script type="module" data-sveltekit-hydrate="45h">
-		import { start } from "./_app/immutable/start-9551fff2.js";
+
+
+
+
+
+<main id="main"><button>Python REPL</button>
+	<py-repl></py-repl></main>
+
+
+		<script type="module" data-sveltekit-hydrate="43eitp">
+		import { start } from "./_app/immutable/start-bdeefb09.js";
 
 		start({
 			env: {},
-			hydrate: null,
+			hydrate: {
+				status: 200,
+				error: null,
+				node_ids: [0, 3],
+				params: {},
+				routeId: "do-python",
+				data: (function(a){return [a,a]}(null)),
+				form: null
+			},
 			paths: {"base":"","assets":""},
-			target: document.querySelector('[data-sveltekit-hydrate="45h"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="43eitp"]').parentNode,
 			trailing_slash: "never"
 		});
-	</script></div>
+	</script>
+	</div>
 </body>
 </html>
