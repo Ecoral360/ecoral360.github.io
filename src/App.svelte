@@ -6,6 +6,9 @@
     <h1>
         Démos du cours <em>IFT1016</em>
     </h1>
+    <div>
+        <a href="www.google.com">Bonjour!</a>
+    </div>
     <Counter/>
     <section>
         1
