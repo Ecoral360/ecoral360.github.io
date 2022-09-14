@@ -6,20 +6,21 @@
     <h1>
         Démos du cours <em>IFT1016</em>
     </h1>
+    <Counter/>
     <section>
-1
+        1
     </section>
     <section>
-2
+        2
     </section>
     <section>
-3
+        3
     </section>
     <section>
-4
+        4
     </section>
     <section>
-5
+        5
     </section>
 </main>
 
