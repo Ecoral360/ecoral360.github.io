@@ -3,13 +3,6 @@
     import Hello from "./routes/hello.svelte";
     import { Route, Router } from "svelte-navigator";
 
-    const path = window.location.pathname;
-    const pages = {
-        "/": Main,
-        "/hello": Hello
-    }
-    console.log(path)
-    let page = pages[path] ?? Main
 </script>
 
 <Router>
